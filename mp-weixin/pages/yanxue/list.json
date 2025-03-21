@@ -1,0 +1,12 @@
+{
+  "navigationBarBackgroundColor": "#8989c3",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "研学展示",
+  "usingComponents": {
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "uni-drawer": "/uni_modules/uni-drawer/components/uni-drawer/uni-drawer",
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "qiun-data-charts": "/uni_modules/qiun-data-charts/components/qiun-data-charts/qiun-data-charts",
+    "w-picker": "/components/w-picker/w-picker"
+  }
+}

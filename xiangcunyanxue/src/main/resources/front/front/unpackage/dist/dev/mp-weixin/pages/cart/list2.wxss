@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  background: whitesmoke;
+}
+.sigle-line-text {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+.glance-shop-cart {
+  width: 100%;
+}
+.glance-shop-cart-scrollx-items {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.glance-shop-cart-scrollx-items-item {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+.glance-shop-cart-scrollx-items-item-sel {
+  position: relative;
+  top: 30%;
+  left: 60%;
+}
+.glance-shop-cart-items-item-des {
+  width: 60%;
+  height: 100%;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.glance-shop-cart-items-item-pq {
+  width: 100%;
+  height: 33.33%;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.glance-shop-cart-items-item-opt {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  font-size: 20px;
+  margin-right: 10px;
+  text-align: center;
+  color: #6C6C6C;
+  line-height: 100%;
+}
+.glance-shop-cart-items-item-opt-quantity-minus {
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+  border-color: #E0E0E0;
+  width: 33.33%;
+  height: 80%;
+  position: relative;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.glance-shop-cart-items-item-opt-quantity {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #E0E0E0;
+  width: 33.33%;
+  height: 80%;
+  font-size: 13px;
+  position: relative;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.glance-shop-cart-items-item-opt-quantity-plus {
+  border-style: solid;
+  border-width: 1px 1px 1px 0;
+  border-color: #E0E0E0;
+  width: 33.33%;
+  height: 80%;
+  position: relative;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.glance-shop-cart-order {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+.glance-shop-cart-total-cnt {
+  width: 30%;
+  text-align: left;
+  line-height: 40px;
+  font-size: 13px;
+  margin-left: 15px;
+}
+.glance-shop-cart-total-amt {
+  width: 35%;
+  text-align: right;
+  margin-right: 15px;
+  line-height: 40px;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #f40;
+}
+.glance-shop-cart-create-order {
+  width: 30%;
+  background-color: #DC143C;
+  text-align: center;
+  line-height: 40px;
+  font-size: 0.8rem;
+  color: #ffffff;
+  margin-right: 10px;
+}
+.glance-shop-cart-itemunselected-img {
+  width: 16px;
+  height: 16px;
+  border: solid 1px lightgray;
+  border-radius: 50%;
+}
+.glance-shop-cart-itemselected-img {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+.glance-shop-cart-del {
+  display: inline-block;
+  width: 18%;
+  height: 90px;
+  background-color: red;
+}
+.glance-shop-cart-del-img {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.glance-shop-cart-nullcart {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+

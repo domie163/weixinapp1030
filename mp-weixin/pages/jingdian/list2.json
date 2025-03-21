@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#8989c3",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "我的景点",
+  "usingComponents": {
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni"
+  }
+}

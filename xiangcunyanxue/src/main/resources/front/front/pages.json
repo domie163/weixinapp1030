@@ -1,0 +1,565 @@
+{
+	"pages": [{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "登录"
+		}
+	},{
+		"path": "pages/register/register",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "注册"
+		}
+	},{
+		"path": "pages/forget/forget",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "忘记密码"
+		}
+		},
+		{
+		"path": "pages/changepassword/changepassword",
+		"style": {
+		"navigationBarBackgroundColor": "#8989c3",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+		"path": "pages/center/center",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的"
+		}
+	},{
+		"path": "pages/user-info/userinfo",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户信息"
+		}
+	}
+		,{
+			"path": "pages/recharge/recharge",
+			"style": {
+				"navigationBarBackgroundColor": "#8989c3",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "充值"
+			}
+		}
+
+ 	,{
+		"path": "pages/address/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "添加地址"
+		}
+	},{
+		"path": "pages/address/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的地址"
+		}
+	}
+	,{
+		"path": "pages/cart/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "购物车展示"
+		}
+	},{
+		"path": "pages/cart/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的购物车"
+		}
+	},{
+		"path": "pages/cart/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "购物车添加/修改"
+		}
+	},{
+		"path": "pages/cart/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "购物车详情"
+		}
+	}
+	,{
+		"path": "pages/chat/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "客服聊天展示"
+		}
+	},{
+		"path": "pages/chat/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的客服聊天"
+		}
+	},{
+		"path": "pages/chat/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "客服聊天添加/修改"
+		}
+	},{
+		"path": "pages/chat/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "客服聊天详情"
+		}
+	}
+       ,{
+		"path": "pages/forum/forum-index",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "全部发帖"
+		}
+	},{
+		"path": "pages/forum/forum-detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "发帖详情"
+		}
+	},{
+		"path": "pages/forum/forum-my",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的发帖"
+		}
+	},{
+		"path": "pages/forum/forum-add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "发贴(修改/新增)"
+		}
+	}
+	,{
+		"path": "pages/jingdian/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "景点展示"
+		}
+	},{
+		"path": "pages/jingdian/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的景点"
+		}
+	},{
+		"path": "pages/jingdian/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "景点添加/修改"
+		}
+	},{
+		"path": "pages/jingdian/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "景点详情"
+		}
+	}
+	,{
+		"path": "pages/jingdianCollection/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "景点收藏展示"
+		}
+	},{
+		"path": "pages/jingdianCollection/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的景点收藏"
+		}
+	},{
+		"path": "pages/jingdianCollection/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "景点收藏添加/修改"
+		}
+	},{
+		"path": "pages/jingdianCollection/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "景点收藏详情"
+		}
+	}
+	,{
+		"path": "pages/jingdianCommentback/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "景点评价展示"
+		}
+	},{
+		"path": "pages/jingdianCommentback/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的景点评价"
+		}
+	},{
+		"path": "pages/jingdianCommentback/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "景点评价添加/修改"
+		}
+	},{
+		"path": "pages/jingdianCommentback/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "景点评价详情"
+		}
+	}
+	,{
+		"path": "pages/jingdianOrder/list",
+		"style": {
+			"navigationBarTitleText": "景点预约"
+		}
+	},{
+		"path": "pages/jingdianOrder/confirm",
+		"style": {
+			"navigationBarTitleText": "订单确认"
+		}
+	},{
+		"path": "pages/jingdianOrder/add-or-update",
+		
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品添加/修改"
+		}
+	}
+	,{
+		"path": "pages/shangpin/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品展示"
+		}
+	},{
+		"path": "pages/shangpin/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的商品"
+		}
+	},{
+		"path": "pages/shangpin/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品添加/修改"
+		}
+	},{
+		"path": "pages/shangpin/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品详情"
+		}
+	}
+	,{
+		"path": "pages/shangpinCollection/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品收藏展示"
+		}
+	},{
+		"path": "pages/shangpinCollection/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的商品收藏"
+		}
+	},{
+		"path": "pages/shangpinCollection/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品收藏添加/修改"
+		}
+	},{
+		"path": "pages/shangpinCollection/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品收藏详情"
+		}
+	}
+	,{
+		"path": "pages/shangpinCommentback/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品评价展示"
+		}
+	},{
+		"path": "pages/shangpinCommentback/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的商品评价"
+		}
+	},{
+		"path": "pages/shangpinCommentback/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品评价添加/修改"
+		}
+	},{
+		"path": "pages/shangpinCommentback/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "商品评价详情"
+		}
+	}
+	,{
+		"path": "pages/shangpinOrder/list",
+		"style": {
+			"navigationBarTitleText": "商品订单"
+		}
+	},{
+		"path": "pages/shangpinOrder/confirm",
+		"style": {
+			"navigationBarTitleText": "订单确认"
+		}
+	}
+	,{
+		"path": "pages/yanxue/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学展示"
+		}
+	},{
+		"path": "pages/yanxue/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的研学"
+		}
+	},{
+		"path": "pages/yanxue/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学添加/修改"
+		}
+	},{
+		"path": "pages/yanxue/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学详情"
+		}
+	}
+	,{
+		"path": "pages/yanxueCollection/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学收藏展示"
+		}
+	},{
+		"path": "pages/yanxueCollection/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的研学收藏"
+		}
+	},{
+		"path": "pages/yanxueCollection/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学收藏添加/修改"
+		}
+	},{
+		"path": "pages/yanxueCollection/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学收藏详情"
+		}
+	}
+	,{
+		"path": "pages/yanxueLiuyan/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学留言展示"
+		}
+	},{
+		"path": "pages/yanxueLiuyan/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的研学留言"
+		}
+	},{
+		"path": "pages/yanxueLiuyan/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学留言添加/修改"
+		}
+	},{
+		"path": "pages/yanxueLiuyan/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学留言详情"
+		}
+	}
+	,{
+		"path": "pages/yanxueYuyue/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学报名展示"
+		}
+	},{
+		"path": "pages/yanxueYuyue/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的研学报名"
+		}
+	},{
+		"path": "pages/yanxueYuyue/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学报名添加/修改"
+		}
+	},{
+		"path": "pages/yanxueYuyue/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "研学报名详情"
+		}
+	}
+	,{
+		"path": "pages/yonghu/list",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户展示"
+		}
+	},{
+		"path": "pages/yonghu/list2",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "我的用户"
+		}
+	},{
+		"path": "pages/yonghu/add-or-update",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户添加/修改"
+		}
+	},{
+		"path": "pages/yonghu/detail",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "用户详情"
+		}
+	}
+			,{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarBackgroundColor": "#8989c3",
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "乡村研学旅行平台首页"
+		}
+	}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "乡村研学旅行平台",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#FFFFFF",
+		"selectedColor": "#fff",
+		"borderStyle": "black",
+		"backgroundColor": "#9ad4ed",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabs/index.png",
+				"selectedIconPath": "static/tabs/index1.png",
+				"text": "首页"
+			}
+			,{
+				"pagePath": "pages/shangpin/list",
+				"iconPath": "static/tabs/type.png",
+				"selectedIconPath": "static/tabs/type1.png",
+				"text": "商品"
+			}
+			,{
+				"pagePath": "pages/yanxue/list",
+				"iconPath": "static/tabs/type.png",
+				"selectedIconPath": "static/tabs/type1.png",
+				"text": "研学"
+			}
+			,{
+			 	"pagePath": "pages/forum/forum-index",
+				"iconPath": "static/tabs/order.png",
+			 	"selectedIconPath": "static/tabs/order1.png",
+				"text": "论坛"
+			}
+			,{
+				"pagePath": "pages/center/center",
+				"iconPath": "static/tabs/mine.png",
+				"selectedIconPath": "static/tabs/mine1.png",
+				"text": "我的"
+			}
+		]
+	}
+	// "permission": {
+	// 	"scope.userLocation": {
+	// 		"desc": ""
+	// 	}
+	// },
+	// "requiredPrivateInfos": ["getLocation", "chooseLocation"]
+}

@@ -1,0 +1,130 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/forget/forget",
+    "pages/changepassword/changepassword",
+    "pages/center/center",
+    "pages/user-info/userinfo",
+    "pages/recharge/recharge",
+    "pages/address/detail",
+    "pages/address/list",
+    "pages/cart/list",
+    "pages/cart/list2",
+    "pages/cart/add-or-update",
+    "pages/cart/detail",
+    "pages/chat/list",
+    "pages/chat/list2",
+    "pages/chat/add-or-update",
+    "pages/chat/detail",
+    "pages/forum/forum-index",
+    "pages/forum/forum-detail",
+    "pages/forum/forum-my",
+    "pages/forum/forum-add-or-update",
+    "pages/jingdian/list",
+    "pages/jingdian/list2",
+    "pages/jingdian/add-or-update",
+    "pages/jingdian/detail",
+    "pages/jingdianCollection/list",
+    "pages/jingdianCollection/list2",
+    "pages/jingdianCollection/add-or-update",
+    "pages/jingdianCollection/detail",
+    "pages/jingdianCommentback/list",
+    "pages/jingdianCommentback/list2",
+    "pages/jingdianCommentback/add-or-update",
+    "pages/jingdianCommentback/detail",
+    "pages/jingdianOrder/list",
+    "pages/jingdianOrder/confirm",
+    "pages/jingdianOrder/add-or-update",
+    "pages/shangpin/list",
+    "pages/shangpin/list2",
+    "pages/shangpin/add-or-update",
+    "pages/shangpin/detail",
+    "pages/shangpinCollection/list",
+    "pages/shangpinCollection/list2",
+    "pages/shangpinCollection/add-or-update",
+    "pages/shangpinCollection/detail",
+    "pages/shangpinCommentback/list",
+    "pages/shangpinCommentback/list2",
+    "pages/shangpinCommentback/add-or-update",
+    "pages/shangpinCommentback/detail",
+    "pages/shangpinOrder/list",
+    "pages/shangpinOrder/confirm",
+    "pages/yanxue/list",
+    "pages/yanxue/list2",
+    "pages/yanxue/add-or-update",
+    "pages/yanxue/detail",
+    "pages/yanxueCollection/list",
+    "pages/yanxueCollection/list2",
+    "pages/yanxueCollection/add-or-update",
+    "pages/yanxueCollection/detail",
+    "pages/yanxueLiuyan/list",
+    "pages/yanxueLiuyan/list2",
+    "pages/yanxueLiuyan/add-or-update",
+    "pages/yanxueLiuyan/detail",
+    "pages/yanxueYuyue/list",
+    "pages/yanxueYuyue/list2",
+    "pages/yanxueYuyue/add-or-update",
+    "pages/yanxueYuyue/detail",
+    "pages/yonghu/list",
+    "pages/yonghu/list2",
+    "pages/yonghu/add-or-update",
+    "pages/yonghu/detail",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "乡村研学旅行平台",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#FFFFFF",
+    "selectedColor": "#fff",
+    "borderStyle": "black",
+    "backgroundColor": "#9ad4ed",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabs/index.png",
+        "selectedIconPath": "static/tabs/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shangpin/list",
+        "iconPath": "static/tabs/type.png",
+        "selectedIconPath": "static/tabs/type1.png",
+        "text": "商品"
+      },
+      {
+        "pagePath": "pages/yanxue/list",
+        "iconPath": "static/tabs/type.png",
+        "selectedIconPath": "static/tabs/type1.png",
+        "text": "研学"
+      },
+      {
+        "pagePath": "pages/forum/forum-index",
+        "iconPath": "static/tabs/order.png",
+        "selectedIconPath": "static/tabs/order1.png",
+        "text": "论坛"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "static/tabs/mine.png",
+        "selectedIconPath": "static/tabs/mine1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "小程序将使用定位功能"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "usingComponents": {}
+}

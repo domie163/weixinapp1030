@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.YanxueLiuyanDao">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        a.id as id
+        ,a.yanxue_id as yanxueId
+        ,a.yonghu_id as yonghuId
+        ,a.yanxue_liuyan_text as yanxueLiuyanText
+        ,a.insert_time as insertTime
+        ,a.reply_text as replyText
+        ,a.update_time as updateTime
+        ,a.create_time as createTime
+    </sql>
+    <select id="selectListView" parameterType="map" resultType="com.entity.view.YanxueLiuyanView" >
+        SELECT
+        <include refid="Base_Column_List" />
+        <!-- 级联表的字段 -->
+        ,yanxue.yanxue_name as yanxueName
+        ,yanxue.yanxue_uuid_number as yanxueUuidNumber
+        ,yanxue.yanxue_photo as yanxuePhoto
+        ,yanxue.yanxue_fuzeren as yanxueFuzeren
+        ,yanxue.yanxue_phone as yanxuePhone
+        ,yanxue.yanxue_address as yanxueAddress
+        ,yanxue.zan_number as zanNumber
+        ,yanxue.cai_number as caiNumber
+        ,yanxue.yanxue_types as yanxueTypes
+        ,yanxue.yanxue_kucun_number as yanxueKucunNumber
+        ,yanxue.yanxue_time as yanxueTime
+        ,yanxue.yanxue_clicknum as yanxueClicknum
+        ,yanxue.yanxue_content as yanxueContent
+        ,yanxue.shangxia_types as shangxiaTypes
+        ,yanxue.yanxue_delete as yanxueDelete
+        ,yonghu.yonghu_name as yonghuName
+        ,yonghu.yonghu_phone as yonghuPhone
+        ,yonghu.yonghu_id_number as yonghuIdNumber
+        ,yonghu.yonghu_photo as yonghuPhoto
+        ,yonghu.yonghu_email as yonghuEmail
+        ,yonghu.new_money as newMoney
+        ,yonghu.jinyong_types as jinyongTypes
+
+        FROM yanxue_liuyan  a
+        left JOIN yanxue yanxue ON a.yanxue_id = yanxue.id
+        left JOIN yonghu yonghu ON a.yonghu_id = yonghu.id
+
+        <where>
+            <if test="params.ids != null">
+                and a.id in
+                <foreach item="item" index="index" collection="params.ids" open="(" separator="," close=")">
+                #{item}
+                </foreach>
+            </if>
+            <if test="params.yanxueId != null and params.yanxueId != ''">
+                and (
+                    a.yanxue_id = #{params.yanxueId}
+                )
+            </if>
+            <if test="params.yonghuId != null and params.yonghuId != ''">
+                and (
+                    a.yonghu_id = #{params.yonghuId}
+                )
+            </if>
+            <if test=" params.yanxueLiuyanText != '' and params.yanxueLiuyanText != null and params.yanxueLiuyanText != 'null' ">
+                and a.yanxue_liuyan_text like CONCAT('%',#{params.yanxueLiuyanText},'%')
+            </if>
+            <if test=" params.insertTimeStart != '' and params.insertTimeStart != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(a.insert_time) >= UNIX_TIMESTAMP(#{params.insertTimeStart}) ]]>
+            </if>
+            <if test=" params.insertTimeEnd != '' and params.insertTimeEnd != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(a.insert_time) <= UNIX_TIMESTAMP(#{params.insertTimeEnd}) ]]>
+            </if>
+            <if test="params.insertTime != null and params.insertTime != ''">
+                and a.insert_time = #{params.insertTime}
+            </if>
+            <if test=" params.replyText != '' and params.replyText != null and params.replyText != 'null' ">
+                and a.reply_text like CONCAT('%',#{params.replyText},'%')
+            </if>
+            <if test=" params.updateTimeStart != '' and params.updateTimeStart != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(a.update_time) >= UNIX_TIMESTAMP(#{params.updateTimeStart}) ]]>
+            </if>
+            <if test=" params.updateTimeEnd != '' and params.updateTimeEnd != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(a.update_time) <= UNIX_TIMESTAMP(#{params.updateTimeEnd}) ]]>
+            </if>
+            <if test="params.updateTime != null and params.updateTime != ''">
+                and a.update_time = #{params.updateTime}
+            </if>
+
+                <!-- 判断研学的id不为空 -->
+            <if test=" params.yanxueIdNotNull != '' and params.yanxueIdNotNull != null and params.yanxueIdNotNull != 'null' ">
+                and a.yanxue_id IS NOT NULL
+            </if>
+            <if test=" params.yanxueName != '' and params.yanxueName != null and params.yanxueName != 'null' ">
+                and yanxue.yanxue_name like CONCAT('%',#{params.yanxueName},'%')
+            </if>
+            <if test=" params.yanxueUuidNumber != '' and params.yanxueUuidNumber != null and params.yanxueUuidNumber != 'null' ">
+                and yanxue.yanxue_uuid_number like CONCAT('%',#{params.yanxueUuidNumber},'%')
+            </if>
+            <if test=" params.yanxueFuzeren != '' and params.yanxueFuzeren != null and params.yanxueFuzeren != 'null' ">
+                and yanxue.yanxue_fuzeren like CONCAT('%',#{params.yanxueFuzeren},'%')
+            </if>
+            <if test=" params.yanxuePhone != '' and params.yanxuePhone != null and params.yanxuePhone != 'null' ">
+                and yanxue.yanxue_phone like CONCAT('%',#{params.yanxuePhone},'%')
+            </if>
+            <if test=" params.yanxueAddress != '' and params.yanxueAddress != null and params.yanxueAddress != 'null' ">
+                and yanxue.yanxue_address like CONCAT('%',#{params.yanxueAddress},'%')
+            </if>
+            <if test="params.zanNumberStart != null  and params.zanNumberStart != '' ">
+                <![CDATA[  and yanxue.zan_number >= #{params.zanNumberStart}   ]]>
+            </if>
+            <if test="params.zanNumberEnd != null  and params.zanNumberEnd != '' ">
+                <![CDATA[  and yanxue.zan_number <= #{params.zanNumberEnd}   ]]>
+            </if>
+            <if test="params.zanNumber != null  and params.zanNumber != '' ">
+                and yanxue.zan_number = #{params.zanNumber}
+            </if>
+            <if test="params.caiNumberStart != null  and params.caiNumberStart != '' ">
+                <![CDATA[  and yanxue.cai_number >= #{params.caiNumberStart}   ]]>
+            </if>
+            <if test="params.caiNumberEnd != null  and params.caiNumberEnd != '' ">
+                <![CDATA[  and yanxue.cai_number <= #{params.caiNumberEnd}   ]]>
+            </if>
+            <if test="params.caiNumber != null  and params.caiNumber != '' ">
+                and yanxue.cai_number = #{params.caiNumber}
+            </if>
+            <if test="params.yanxueTypes != null  and params.yanxueTypes != ''">
+                and yanxue.yanxue_types = #{params.yanxueTypes}
+            </if>
+
+            <if test="params.yanxueKucunNumberStart != null  and params.yanxueKucunNumberStart != '' ">
+                <![CDATA[  and yanxue.yanxue_kucun_number >= #{params.yanxueKucunNumberStart}   ]]>
+            </if>
+            <if test="params.yanxueKucunNumberEnd != null  and params.yanxueKucunNumberEnd != '' ">
+                <![CDATA[  and yanxue.yanxue_kucun_number <= #{params.yanxueKucunNumberEnd}   ]]>
+            </if>
+            <if test="params.yanxueKucunNumber != null  and params.yanxueKucunNumber != '' ">
+                and yanxue.yanxue_kucun_number = #{params.yanxueKucunNumber}
+            </if>
+            <if test=" params.yanxueTimeStart != '' and params.yanxueTimeStart != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(yanxue.yanxue_time) >= UNIX_TIMESTAMP(#{params.yanxueTimeStart}) ]]>
+            </if>
+            <if test=" params.yanxueTimeEnd != '' and params.yanxueTimeEnd != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(yanxue.yanxue_time) <= UNIX_TIMESTAMP(#{params.yanxueTimeEnd}) ]]>
+            </if>
+            <if test="params.yanxueTime != null and params.yanxueTime != ''">
+                and a.yanxue_time = #{params.yanxueTime}
+            </if>
+            <if test="params.yanxueClicknumStart != null  and params.yanxueClicknumStart != '' ">
+                <![CDATA[  and yanxue.yanxue_clicknum >= #{params.yanxueClicknumStart}   ]]>
+            </if>
+            <if test="params.yanxueClicknumEnd != null  and params.yanxueClicknumEnd != '' ">
+                <![CDATA[  and yanxue.yanxue_clicknum <= #{params.yanxueClicknumEnd}   ]]>
+            </if>
+            <if test="params.yanxueClicknum != null  and params.yanxueClicknum != '' ">
+                and yanxue.yanxue_clicknum = #{params.yanxueClicknum}
+            </if>
+            <if test=" params.yanxueContent != '' and params.yanxueContent != null and params.yanxueContent != 'null' ">
+                and yanxue.yanxue_content like CONCAT('%',#{params.yanxueContent},'%')
+            </if>
+            <if test="params.shangxiaTypes != null  and params.shangxiaTypes != ''">
+                and yanxue.shangxia_types = #{params.shangxiaTypes}
+            </if>
+
+            <if test="params.yanxueDeleteStart != null  and params.yanxueDeleteStart != '' ">
+                <![CDATA[  and yanxue.yanxue_delete >= #{params.yanxueDeleteStart}   ]]>
+            </if>
+            <if test="params.yanxueDeleteEnd != null  and params.yanxueDeleteEnd != '' ">
+                <![CDATA[  and yanxue.yanxue_delete <= #{params.yanxueDeleteEnd}   ]]>
+            </if>
+            <if test="params.yanxueDelete != null  and params.yanxueDelete != '' ">
+                and yanxue.yanxue_delete = #{params.yanxueDelete}
+            </if>
+            <if test=" params.insertTimeStart != '' and params.insertTimeStart != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(yanxue.insert_time) >= UNIX_TIMESTAMP(#{params.insertTimeStart}) ]]>
+            </if>
+            <if test=" params.insertTimeEnd != '' and params.insertTimeEnd != null ">
+                <![CDATA[  and UNIX_TIMESTAMP(yanxue.insert_time) <= UNIX_TIMESTAMP(#{params.insertTimeEnd}) ]]>
+            </if>
+            <if test="params.insertTime != null and params.insertTime != ''">
+                and a.insert_time = #{params.insertTime}
+            </if>
+                <!-- 判断用户的id不为空 -->
+            <if test=" params.yonghuIdNotNull != '' and params.yonghuIdNotNull != null and params.yonghuIdNotNull != 'null' ">
+                and a.yonghu_id IS NOT NULL
+            </if>
+            <if test=" params.yonghuName != '' and params.yonghuName != null and params.yonghuName != 'null' ">
+                and yonghu.yonghu_name like CONCAT('%',#{params.yonghuName},'%')
+            </if>
+            <if test=" params.yonghuPhone != '' and params.yonghuPhone != null and params.yonghuPhone != 'null' ">
+                and yonghu.yonghu_phone like CONCAT('%',#{params.yonghuPhone},'%')
+            </if>
+            <if test=" params.yonghuIdNumber != '' and params.yonghuIdNumber != null and params.yonghuIdNumber != 'null' ">
+                and yonghu.yonghu_id_number like CONCAT('%',#{params.yonghuIdNumber},'%')
+            </if>
+            <if test=" params.yonghuEmail != '' and params.yonghuEmail != null and params.yonghuEmail != 'null' ">
+                and yonghu.yonghu_email like CONCAT('%',#{params.yonghuEmail},'%')
+            </if>
+            <if test="params.newMoneyStart != null ">
+                <![CDATA[  and yonghu.new_money >= #{params.newMoneyStart}   ]]>
+            </if>
+            <if test="params.newMoneyEnd != null ">
+                <![CDATA[  and yonghu.new_money <= #{params.newMoneyEnd}   ]]>
+            </if>
+            <if test="params.newMoney != null and params.newMoney != ''">
+                and a.new_money = #{params.newMoney}
+            </if>
+            <if test="params.jinyongTypes != null  and params.jinyongTypes != ''">
+                and yonghu.jinyong_types = #{params.jinyongTypes}
+            </if>
+
+        </where>
+        order by a.${params.sort} ${params.order}
+    </select>
+
+</mapper>
